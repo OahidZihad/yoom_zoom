@@ -48,7 +48,9 @@ export default function MeetingModal({
               />
             </div>
           )}
-          <h1 className={cn("text-3xl font-bold leading-[42px]")}>{title}</h1>
+          <h1 className={cn("text-3xl font-bold leading-[42px]", className)}>
+            {title}
+          </h1>
           {children}
           <Button
             className="bg-blue-1 focus-visible:ring-0 focus-visible:ring-offset-0"
